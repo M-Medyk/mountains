@@ -1,0 +1,265 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  background: #c2cbd4;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper {
+  margin: auto;
+  margin-top: 3vw;
+  width: 80vw;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.7);
+}
+
+.header_hero-bg {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  -webkit-filter: grayscale(60%);
+          filter: grayscale(60%);
+  background-size: cover;
+  background-position: 40% 50%;
+  background-image: url(/img/hero-bg.jpg);
+}
+
+header {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+}
+
+header * {
+  margin: 5px 0 5px 0;
+  text-shadow: 5px 5px 10px black;
+}
+
+header h4 {
+  font-size: 18px;
+}
+
+header h4 i {
+  margin: 0 10px 0 10px;
+}
+
+header h1 {
+  font-size: 96px;
+  letter-spacing: 5px;
+}
+
+header h3 {
+  font-size: 18px;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  text-transform: uppercase;
+  border-bottom: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a {
+  font-size: 20px;
+  color: #000;
+}
+
+nav .logo {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000;
+  border: 5px solid black;
+  padding: 10px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .logo:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.services {
+  margin-top: 200px;
+  color: #000;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.services p {
+  font-size: 20px;
+  width: 800px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.services-icons {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.services-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.services-icon i {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 200px;
+  background-color: #060b0c;
+  height: 800px;
+  padding: 0 100px 0 100px;
+}
+
+.clients .clients-text {
+  width: 25%;
+  height: 700px;
+  padding-top: 150px;
+}
+
+.clients .clients-text h2 {
+  font-size: 48px;
+}
+
+.clients .clients-text p {
+  margin-top: 25px;
+  color: #8a8a8a;
+  font-size: 20px;
+}
+
+.clients .clients-text .contact-us {
+  width: 125px;
+  height: 30px;
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  border-radius: 90px;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.clients .clients-text .contact-us:hover {
+  color: #fff;
+  background-color: #060b0c;
+  border: 1px solid #fff;
+}
+
+.clients .clients-logos {
+  height: 700px;
+  padding-top: 150px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.clients .clients-logos img {
+  height: 60px;
+  margin: auto;
+  opacity: 50%;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.clients .clients-logos img:hover {
+  opacity: 100%;
+}
+
+.quotes {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  color: #000;
+  position: relative;
+}
+
+.quotes .quote {
+  margin-top: 100px;
+  position: absolute;
+  opacity: 0;
+}
+
+.quotes .quote.show {
+  opacity: 1;
+}
+
+.quotes .author {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #4e4e4e;
+}
+/*# sourceMappingURL=style.css.map */
