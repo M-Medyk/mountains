@@ -5,23 +5,23 @@ const quotes = document.querySelectorAll('div.quotes div.quote')
 let i = 0
 
 btn_prev.onclick = function () {
-	quotes[i].className = ''
+	quotes[i].className = 'quote'
 	i = i - 1 /* i-- */
 
 	if (i < 0) {
 		i = quotes.length - 1
 	}
 
-	quotes[i].className = 'show'
+	quotes[i].className = 'quote show'
 }
 
 btn_next.onclick = function () {
-	quotes[i].className = ''
+	quotes[i].className = 'quote'
 	i = i + 1 /* i++ */
 
 	if (i >= quotes.length) {
 		i = 0
 	}
 
-	quotes[i].className = 'show'
+	quotes[i].className = 'quote show'
 }
